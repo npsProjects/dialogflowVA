@@ -284,14 +284,9 @@ function submit_message(message) {
       }
   }
 
-function submit_message2(message) {
-        $.post( "/send_message2", {message: message}, handle_response2);
-
-        function handle_response2(data) {
-          // append the bot repsonse to the div
-          // answer = data.message;
-          // console.log("DADADA")
-          // console.log(data);
+function submit_first_message(message) {
+        $.post( "/send_first_message", {message: message}, handle_first_response);
+        function handle_first_response(data) {
           sendMessage(data);
         }
     }
@@ -347,7 +342,7 @@ function getMailtoUrl(to, subject, body) {
     return url;
 }
 
-submit_message2("rarara");
+submit_first_message("first Message ");
 // togglePopup("popup-2")
 // sendMessage('Hello, I am your virtual cash management assistant. How can I help you today?');
 // togglePopup("popup-1")

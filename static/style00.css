@@ -1,0 +1,503 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edeff2;
+  font-family: "Calibri", "Roboto", sans-serif;
+}
+
+.chat_window {
+  position: absolute;
+  width: calc(100% - 20px);
+  max-width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #fff;
+  left: 50%;
+  top: 68%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.chat_window .top_menu0 {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 0 15px;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+.chat_window .top_menu0 .buttons0 {
+  margin: 3px 0 0 20px;
+  position: absolute;
+}
+.chat_window .top_menu0 .buttons0 .button0 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+.chat_window .top_menu0 .buttons0 .button0.close0 {
+  background-color: #f5886e;
+}
+.chat_window .top_menu0 .buttons0 .button0.minimize0 {
+  background-color: #fdbf68;
+}
+.chat_window .top_menu0 .buttons0 .button0.maximize0 {
+  background-color: #a3d063;
+}
+.chat_window .top_menu0 .title0 {
+  text-align: center;
+  color: rgb(255, 98, 0);
+  font-size: 20px;
+}
+
+.messages {
+  position: relative;
+  list-style: none;
+  padding: 20px 10px 0 10px;
+  margin: 0;
+  height: 347px;
+  overflow: scroll;
+}
+.messages .message {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.messages .message.left .avatar {
+  background-color: #f5886e;
+  float: left;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.messages .message.left .text_wrapper {
+  background-color: #ffe6cb;
+  margin-left: 20px;
+}
+.messages .message.left .text_wrapper::after, .messages .message.left .text_wrapper::before {
+  right: 100%;
+  border-right-color: #ffe6cb;
+}
+.messages .message.left .text {
+  color: #000000;
+}
+.messages .message.right .avatar {
+  background-color: #fdbf68;
+  float: right;
+  content: url(https://www.w3schools.com/howto/img_avatar.png);
+}
+.messages .message.right .text_wrapper {
+  background-color: #c7eafc;
+  margin-right: 20px;
+  float: right;
+}
+.messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
+  left: 100%;
+  border-left-color: #c7eafc;
+}
+.messages .message.right .text {
+  color: #000000;
+}
+.messages .message.appeared {
+  opacity: 1;
+}
+.messages .message .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.messages .message .text_wrapper {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 6px;
+  width: calc(100% - 85px);
+  min-width: 100px;
+  position: relative;
+}
+.messages .message .text_wrapper::after, .messages .message .text_wrapper:before {
+  top: 18px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.messages .message .text_wrapper::after {
+  border-width: 13px;
+  margin-top: 0px;
+}
+.messages .message .text_wrapper::before {
+  border-width: 15px;
+  margin-top: -2px;
+}
+.messages .message .text_wrapper .text {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.bottom_wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 20px;
+  position: absolute;
+  bottom: 0;
+}
+.bottom_wrapper .message_input_wrapper {
+  display: inline-block;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #bcbdc0;
+  width: calc(100% - 160px);
+  position: relative;
+  padding: 0 20px;
+}
+.bottom_wrapper .message_input_wrapper .message_input {
+  border: none;
+  height: 100%;
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  position: absolute;
+  outline-width: 0;
+  color: gray;
+}
+.bottom_wrapper .send_message {
+  width: 140px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: rgba(255, 98, 0);
+  border: 2px solid rgba(255, 98, 0);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  text-align: center;
+  float: right;
+}
+.bottom_wrapper .send_message:hover {
+  color: #a3d063;
+  background-color: #fff;
+}
+.bottom_wrapper .send_message .text {
+  font-size: 18px;
+  font-weight: 300;
+  display: inline-block;
+  line-height: 48px;
+}
+
+.message_template {
+  display: none;
+}
+
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+
+.popup .content {
+  position:absolute;
+  top:10%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  width:900px;
+  height:200px;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+  font-family:"Open Sans",sans-serif;
+}
+
+.popup .top_menu1 {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 0 15px;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+.popup .top_menu1 .buttons1 {
+  margin: 3px 0 0 20px;
+  position: absolute;
+}
+.popup .top_menu1 .buttons1 .button1 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+.popup .top_menu1 .buttons1 .button1.close1 {
+  background-color: #f5886e;
+}
+.popup .top_menu1 .buttons1 .button1.minimize1 {
+  background-color: #fdbf68;
+}
+.popup .top_menu1 .buttons1 .button1.maximize1 {
+  background-color: #a3d063;
+}
+.popup .top_menu1 .title1 {
+  text-align: center;
+  color: rgb(255, 98, 0);
+  font-size: 20px;
+}
+
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+.popup2 .overlay2 {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+
+.popup2 .content2 {
+  position:absolute;
+  top:10%;
+  left:80%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  width:600px;
+  height:200px;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+  font-family:"Open Sans",sans-serif;
+}
+
+.popup2 .top_menu2 {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 0 15px;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+.popup2 .top_menu2 .buttons2 {
+  margin: 3px 0 0 20px;
+  position: absolute;
+}
+.popup2 .top_menu2 .buttons2 .button2 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+.popup2 .top_menu2 .buttons2 .button2.close2 {
+  background-color: #f5886e;
+}
+.popup2 .top_menu2 .buttons2 .button2.minimize2 {
+  background-color: #fdbf68;
+}
+.popup2 .top_menu2 .buttons2 .button2.maximize2 {
+  background-color: #a3d063;
+}
+.popup2 .top_menu2 .title2 {
+  text-align: center;
+  color: rgb(255, 98, 0);
+  font-size: 20px;
+}
+
+.popup2.active .content2 {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+.popup2 .overlay2 {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+
+.popup4 .content4 {
+  position:absolute;
+  top:10%;
+  left:10%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  width:300px;
+  height:200px;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+  font-family:"Open Sans",sans-serif;
+}
+
+.popup4 .top_menu4 {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 0 15px;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+.popup4 .top_menu4 .buttons4 {
+  margin: 3px 0 0 20px;
+  position: absolute;
+}
+.popup4 .top_menu4 .buttons4 .button4 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+.popup4 .top_menu4 .buttons4 .button4.close4 {
+  background-color: #f5886e;
+}
+.popup4 .top_menu4 .buttons4 .button4.minimize4 {
+  background-color: #fdbf68;
+}
+.popup4 .top_menu4 .buttons4 .button4.maximize4 {
+  background-color: #a3d063;
+}
+.popup4 .top_menu4 .title4 {
+  text-align: center;
+  color: rgb(255, 98, 0);
+  font-size: 20px;
+  margin-right: -70px;
+}
+
+.popup4.active .content4 {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+.top_menu3 {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 0 15px;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+.top_menu3 .buttons3 {
+  margin: 3px 0 0 20px;
+  position: absolute;
+}
+.top_menu3 .buttons3 .button3 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+.top_menu3 .buttons3 .button3.close3 {
+  background-color: #f5886e;
+}
+.top_menu3 .buttons3 .button3.minimize3 {
+  background-color: #fdbf68;
+}
+.top_menu3 .buttons3 .button3.maximize3 {
+  background-color: #a3d063;
+}
+.top_menu3 .title3 {
+  text-align: center;
+  color: rgb(255, 98, 0);
+  font-size: 20px;
+}
+
+
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(255, 98, 0);
+  color: white;
+}
+
+
+#customers2 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers2 td, #customers2 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers2 tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers2 tr:hover {background-color: #ddd;}
+
+#customers2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(255, 98, 0);
+  color: white;
+}
+
+
+
+
+
+
+#customers4 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers4 td, #customers4 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers4 tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers4 tr:hover {background-color: #ddd;}
+
+#customers4 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(255, 98, 0);
+  color: white;
+}

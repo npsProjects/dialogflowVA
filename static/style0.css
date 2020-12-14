@@ -1,0 +1,39 @@
+body,html {
+  height: 100%;
+}
+
+.chat-container {
+  /*margin: 0px;*/
+  padding: 0px;
+  width: 1200px;
+  /* color: red; */
+  margin: 35px 35px;
+  margin-left: -30%;
+  margin-right: 35%;
+}
+
+.chat-message {
+  padding: 6px;
+  border-radius: 6px;
+  margin-bottom: 3px;
+}
+
+.bot-message {
+  background: orange;
+  max-width: 1200px;
+  color: white;
+  margin-left: auto;
+}
+
+.human-message {
+  background: rgb(251, 245, 245);
+  max-width: 1200px;
+  color: orange;
+  margin: 13px 1px;
+}
+
+.input {
+  width: 1200px;
+  /*margin: 35px 0px;*/
+  margin-left: -30%;
+  margin-right: 15%;

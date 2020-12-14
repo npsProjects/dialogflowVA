@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+    <sendmeta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style00.css') }}">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Virtual assistant</title>
+  </head>
+  <body>
+    <div class="top_menu3">
+      <div class="buttons3">
+        <div class="button3 close3"></div>
+        <div class="button3 minimize3"></div>
+        <div class="button3 maximize3"></div>
+      </div>
+      <div class="title3">Welcome, John!</div>
+      </div>
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+      <div class="top_menu1">
+        <div class="buttons1">
+          <div class="button1 close1"></div>
+          <div class="button1 minimize1"></div>
+          <div class="button1 maximize1"></div>
+        </div>
+          <div class="title1">Pending invoices on 23/12/2020 for Canfor</div>
+        <table id="customers">
+          <tr>
+            <th>Invoice ID</th>
+            <th>Payer name</th>
+            <th>Invoice amount </th>
+          </tr>
+          <tr>
+            <td>i3242</td>
+            <td>Shell</td>
+            <td>10000</td>
+          </tr>
+          <tr>
+            <td>i3603</td>
+            <td>OMV</td>
+            <td>9500</td>
+          </tr>
+          <tr>
+            <td>i3584</td>
+            <td>Lucoil</td>
+            <td>7800</td>
+          </tr>
+          <tr>
+            <td>i3230</td>
+            <td>Lucoil</td>
+            <td>7600</td>
+          </tr>
+          <tr>
+            <td>i3231</td>
+            <td>Petroleum</td>
+            <td>7100</td>
+          </tr>
+        </table>
+          </div>
+      </div>
+    </div>
+    <div class="popup2" id="popup-2">
+      <div class="overlay2"></div>
+      <div class="content2">
+      <div class="top_menu2">
+        <div class="buttons2">
+          <div class="button2 close2"></div>
+          <div class="button2 minimize2"></div>
+          <div class="button2 maximize2"></div>
+        </div>
+          <div class="title2">Contact information</div>
+        <table id="customers2">
+          <tr>
+            <th>IBAN</th>
+            <th>Email address</th>
+            <th>Phone number</th>
+            <th>Credit amount</th>
+            <th>Credit remaining</th>
+          </tr>
+          <tr>
+            <td>NL91 ABNA 0417 1643 00</td>
+            <td>Shell@gmail.com</td>
+            <td>+3167010281097</td>
+            <td>32000</td>
+            <td>29600</td>
+        </table>
+        </div>
+      </div>
+    </div>
+    <div class="popup4" id="popup-4">
+      <div class="overlay4"></div>
+      <div class="content4">
+      <div class="top_menu4">
+        <div class="buttons4">
+          <div class="button4 close4"></div>
+          <div class="button4 minimize4"></div>
+          <div class="button4 maximize4"></div>
+        </div>
+          <div class="title4">Invoices</div>
+        <table id="customers4">
+          <tr>
+            <th>Invoice ID</th>
+            <th>Invoice amount</th>
+          </tr>
+          <tr>
+            <td>i3242</td>
+            <td>10000</td>
+          </tr><tr>
+            <td>i3272</td>
+            <td>9300</td>
+          </tr><tr>
+            <td>i3248</td>
+            <td>6000</td>
+          </tr><tr>
+            <td>i3253</td>
+            <td>4300</td>
+        </table>
+        </div>
+      </div>
+    </div>
+    <div class="chat_window">
+      <div class="top_menu0">
+        <div class="buttons0">
+          <div class="button0 close0"></div>
+          <div class="button0 minimize0"></div>
+          <div class="button0 maximize0"></div>
+        </div>
+          <div class="title0">Virtual Cash Management AI Assistant</div>
+      </div><ul class="messages"></ul>
+
+          <div class="bottom_wrapper clearfix">
+            <div class="message_input_wrapper">
+              <form id="target">
+                <input class="message_input" type="text" value="" placeholder="Enter message..." id="input_message"/>
+                <input type="submit" hidden>
+              </form>
+            </div>
+            <div class="send_message">
+              <div class="icon"></div>
+              <div class="text">Send</div>
+            </div>
+          </div>
+        </div>
+      <div class="message_template"><li class="message">
+        <img src="https://darresne.com/img/female-avatar.png" alt="avatar" class="avatar">
+        <div class="text_wrapper">
+          <div class="text">
+          </div>
+        </div>
+      </li>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='custom00.js')}}"></script>
+  </body>
+</html>

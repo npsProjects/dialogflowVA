@@ -135,7 +135,7 @@ def webhook():
                    displayText='25',
                    id="webhookdata")
 
-
+    # Deal with the payer intent here
     if(query_result.get('intent').get('displayName')=='payerIntent'):
 
         print("-----------------------WEBHOOK--------------------")
@@ -192,6 +192,7 @@ def webhook():
                    displayText='25',
                    id="webhookdata")
 
+    # Deal with the invoice intent here
     if(query_result.get('intent').get('displayName')=='InvoiceIntent'):
         print("-----------------------Invoice Intent--------------------")
 
@@ -426,7 +427,6 @@ def webhook():
                    displayText='25',
                    id="webhookdata")
 
-
     # DIALOGBUILDINGPART
     if(query_result.get('intent').get('displayName')=='seeInvoicesIntentYes'):
         print("-----------------------Invoice Dialog 1--------------------")
@@ -456,8 +456,13 @@ def webhook():
 
         # Find the name in the highest invoice
         queryGoal = str("SELECT payer_id  FROM invoices where client_id = \"" + client_id + "\"" + "and invoice_paid = \"no\"")
-        # Need to change to today (take from date intent)
-        dateDialogflow = ("2020:12:09")
+        # Current day
+        from datetime import date
+        today = date.today()
+        # dd/mm/YY
+        d1 = today.strftime("%d/%m/%Y")
+        dateDialogflow = (str(d1[6:10])+ ':' + str(d1[3:5]) + ':' + str(d1[:2]))
+
         queryGoal = queryGoal + str(" and invoice_due_date <= \"" + dateDialogflow + "\"" + " order by amount_remaining DESC" )
         namePayer = queryParse(queryGoal)
 
@@ -475,7 +480,13 @@ def webhook():
         print("-----------------------Invoice Dialog 2--------------------")
         # First create the invoices table
         queryGoal = str("SELECT payer_id  FROM invoices where client_id = \"" + client_id + "\"" + "and invoice_paid = \"no\"")
-        dateDialogflow = ("2020:12:09")
+        # Current day
+        from datetime import date
+        today = date.today()
+        # dd/mm/YY
+        d1 = today.strftime("%d/%m/%Y")
+        dateDialogflow = (str(d1[6:10])+ ':' + str(d1[3:5]) + ':' + str(d1[:2]))
+
         queryGoal = queryGoal + str(" and invoice_due_date <= \"" + dateDialogflow + "\"" + " order by amount_remaining DESC" )
 
         namePayer = queryParse(queryGoal)
@@ -542,7 +553,13 @@ def webhook():
         print("-----------------------Invoice Dialog 3--------------------")
 
         queryGoal = str("SELECT payer_id  FROM invoices where client_id = \"" + client_id + "\"" + "and invoice_paid = \"no\"")
-        dateDialogflow = ("2020:12:09")
+        # Current day
+        from datetime import date
+        today = date.today()
+        # dd/mm/YY
+        d1 = today.strftime("%d/%m/%Y")
+        dateDialogflow = (str(d1[6:10])+ ':' + str(d1[3:5]) + ':' + str(d1[:2]))
+
         queryGoal = queryGoal + str(" and invoice_due_date <= \"" + dateDialogflow + "\"" + " order by amount_remaining DESC" )
 
         namePayer = queryParse(queryGoal)
@@ -559,21 +576,18 @@ def webhook():
 
 
         queryGoal = str("SELECT invoice_id  FROM invoices where client_id = \"" + client_id + "\"" + "and invoice_paid = \"no\"")
-        dateDialogflow = ("2020:12:09")
         queryGoal = queryGoal + str(" and invoice_due_date <= \"" + dateDialogflow + "\"" + " order by amount_remaining DESC" )
         invoiceid = queryParse(queryGoal)
         result.append(invoiceid)
         result.append("|")
 
         queryGoal = str("SELECT invoice_due_date  FROM invoices where client_id = \"" + client_id + "\"" + "and invoice_paid = \"no\"")
-        dateDialogflow = ("2020:12:09")
         queryGoal = queryGoal + str(" and invoice_due_date <= \"" + dateDialogflow + "\"" + " order by amount_remaining DESC" )
         date = queryParse(queryGoal)
         result.append(date)
         result.append("|")
 
         queryGoal = str("SELECT invoice_amount  FROM invoices where client_id = \"" + client_id + "\"" + "and invoice_paid = \"no\"")
-        dateDialogflow = ("2020:12:09")
         queryGoal = queryGoal + str(" and invoice_due_date <= \"" + dateDialogflow + "\"" + " order by amount_remaining DESC" )
         resultTarget = query(queryGoal)
         length = int(len(resultTarget))
@@ -595,14 +609,12 @@ def webhook():
                    displayText='25',
                    id="webhookdata")
 
-
     print("-----------------------WEBHOOK--------------------")
     # If we reach here we detected intent that we cant answer.
     result.append("Sorry, this is a virtual assistant for the accounts receivable team and the virtual cash management domain. Perhaps a different  assistant can answer your question.")
     return jsonify(fulfillmentText=str(result),
                displayText='25',
                id="webhookdata")
-
 
 # Here we send the message to dialogflow. We need to specify the knowledge base since it is still a beta feature and requires this.
 def detect_intent_texts(project_id, session_id, text, language_code):
@@ -644,7 +656,6 @@ def detect_intent_texts(project_id, session_id, text, language_code):
         print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         return response.query_result.fulfillment_text
 
-
 # Reroute to detect intent with the required information. lso specify language here.-
 @app.route('/send_message', methods=['POST'])
 def send_message():
@@ -661,7 +672,6 @@ def send_message():
     print("----------------------------------------------------------------------------------------")
     return jsonify(response_text)
 
-
 # The initial message. Here we specify the different languages first response.
 @app.route('/send_first_message', methods=['POST'])
 def submit_first_message():
@@ -669,7 +679,6 @@ def submit_first_message():
         return "Hallo, ik ben uw virtuele cashmanagement-assistent. Hoe kan ik je vandaag helpen?"
     else:
         return "Hello, I am your virtual cash management assistant. How can I help you today?"
-
 
 # Perform the query
 def query(query):

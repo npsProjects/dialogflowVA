@@ -1,4 +1,5 @@
 // Came with the chatbot template code
+// This is dealing with the messages in the chatbox
 var Message;
 Message = function (arg) {
     this.text = arg.text, this.message_side = arg.message_side;
@@ -15,6 +16,7 @@ Message = function (arg) {
     }(this);
     return this;
 };
+
 var getMessageText, message_side, sendMessage;
 message_side = 'right';
 getMessageText = function () {
@@ -38,10 +40,8 @@ sendMessage = function (text) {
     return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
 };
 $('.send_message').click(function (e) {
-
     sendMessage(getMessageText());
     submit_message(getMessageText());
-
 });
 $('#target').on('submit', function(e){
         e.preventDefault();
@@ -60,23 +60,18 @@ $('.message_input').keyup(function (e) {
         return sendMessage(getMessageText());
     }
 });
-
+// Keep track on which tables are on the screen
 var x;
-var y = 0;
-// Functionallity
+// Functionallity of popups
 function togglePopup(popupNumber){
   document.getElementById(popupNumber).classList.toggle("active");
 }
-
+// SPecify the table you want and provide the info
 function updateTable(answer, table){
   $("#"+table+" tr").remove();
   answer = answer.replace(/\'/gi, '');
   answer = answer.replace(/\'/gi, '');
   answerAll = answer.split('(');
-  // console.log(answer);
-  // console.log(answerAll);
-  // console.log("#"+table)
-  // console.log("#"+table+" thead")
   answer = answerAll[0].split(',');
   if ($("#"+table+" thead").length == 0) {
       $("#"+table).append("<thead></thead>");
@@ -88,7 +83,7 @@ function updateTable(answer, table){
   }
   tableContent =  (tableContent + "</tr>")
   $("#"+table+" thead").append(tableContent)
-
+  // 12 is the max length we allow of the table (Should be modified at one point)
   for (j = 1; j < Math.min(12,answerAll.length); j++) {
     answer = answerAll[j].split(',');
     if ($("#"+table+" tbody").length == 0) {
@@ -101,31 +96,30 @@ function updateTable(answer, table){
     tableContent =  (tableContent + "</tr>")
     $("#"+table+" tbody").append(tableContent)
   }
-  // var Table = document.getElementById("customers");
-  // $("#customers tr").remove();
 
+  clickableTableHeading()
 
 }
-
+// Sending a message
 function submit_message(message) {
       $.post( "/send_message", {message: message}, handle_response);
 
       function handle_response(data) {
-        // append the bot repsonse to the div
+        // Parse the resonse. We check if we are dealing with type message.
         answer = data.message;
         console.log(answer);
         answer = answer.replace(/\[/gi, '');
         answer = answer.replace(/\]/gi, '');
         answer = answer.replace(/\)/gi, '');
         splitAnswer = answer.split('|');
-        // console.log(splitAnswer[0]);
-        // console.log(splitAnswer[1]);
-        // console.log(splitAnswer[2]);
-
         splitAnswer[0] = splitAnswer[0].replace(/\'/gi, '');
         splitAnswer[0] = splitAnswer[0].replace(/\,/gi, '');
         console.log(splitAnswer[0]);
+
+        // Based on type of response, deal with
+        // Type 1: Just a table
         if (splitAnswer[0].trim() == 'Type1'){
+          // Popup logic
           if (x==1){
               togglePopup("popup-1")
           }
@@ -136,27 +130,23 @@ function submit_message(message) {
           x = 1;
           togglePopup("popup-1")
 
+          // Update table
+          updateTable(splitAnswer[1], "table1")
+
+          // Parse and send message
           splitAnswer[2] = splitAnswer[2].replace(/\'/gi, '');
           splitAnswer[2] = splitAnswer[2].replace(/\,/gi, '');
           splitAnswer[2] = splitAnswer[2].replace(/\"/gi, '');
-
-          updateTable(splitAnswer[1], "table1")
           sendMessage(splitAnswer[2].trim())
+
+          // Table heading
           splitAnswer[3] = splitAnswer[3].replace(/\'/gi, '');
           splitAnswer[3] = splitAnswer[3].replace(/\,/gi, '');
           document.getElementById("firstTable").innerHTML = splitAnswer[3];
-          document.querySelectorAll(".table-sortable th").forEach(headerCell => {
-              headerCell.addEventListener("click", () => {
-                  const tableElement = headerCell.parentElement.parentElement.parentElement;
-                  const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
-                  const currentIsAscending = headerCell.classList.contains("th-sort-asc");
-
-                  sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
-              });
-          });
-
         }
+        // Type2 : 2 tables
         else if (splitAnswer[0].trim() == 'Type2') {
+          // Popup logic
           if (x==1){
               togglePopup("popup-1")
           }
@@ -165,40 +155,31 @@ function submit_message(message) {
               togglePopup("popup-2")
           }
           x = 2;
-          // if (y ==1){
-          //   chart.remove();
-          //   y=0;
-          // }
           togglePopup("popup-1")
           togglePopup("popup-2")
-          splitAnswer[3] = splitAnswer[3].replace(/\'/gi, '');
-          splitAnswer[3] = splitAnswer[3].replace(/\,/gi, '');
+
+          // Update table with  data
           updateTable(splitAnswer[1], "table1")
           updateTable(splitAnswer[2], "table2")
 
+          // Parse the message
+          splitAnswer[3] = splitAnswer[3].replace(/\'/gi, '');
+          splitAnswer[3] = splitAnswer[3].replace(/\,/gi, '');
           splitAnswer[3] = splitAnswer[3].replace(/\"/gi, '');
           sendMessage(splitAnswer[3].trim())
 
+          // Table headings
           splitAnswer[4] = splitAnswer[4].replace(/\'/gi, '');
           splitAnswer[4] = splitAnswer[4].replace(/\,/gi, '');
           splitAnswer[5] = splitAnswer[5].replace(/\'/gi, '');
           splitAnswer[5] = splitAnswer[5].replace(/\,/gi, '');
-          // console.log("IAMHERE");
-
           document.getElementById("firstTable").innerHTML = splitAnswer[4];
           document.getElementById("secondTable").innerHTML = splitAnswer[5];
 
-          document.querySelectorAll(".table-sortable th").forEach(headerCell => {
-              headerCell.addEventListener("click", () => {
-                  const tableElement = headerCell.parentElement.parentElement.parentElement;
-                  const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
-                  const currentIsAscending = headerCell.classList.contains("th-sort-asc");
-
-                  sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
-              });
-          });
+          clickableTableHeading()
         }
         else if (splitAnswer[0].trim() == 'Type3') {
+          // Toggle popup logic
           if (x==1){
               togglePopup("popup-1")
           }
@@ -207,75 +188,56 @@ function submit_message(message) {
               togglePopup("popup-2")
           }
           x = 2;
-          // chart.remove();
           togglePopup("popup-1")
           togglePopup("popup-2")
+
+          // Update first table
+          updateTable(splitAnswer[1], "table1")
+
+          // Remove second table if existing in order to add graph to popup
+          $("#table2 tr").remove();
+          document.getElementById("secondTable").innerHTML = "";
+
+          // Add message response message
           splitAnswer[2] = splitAnswer[2].replace(/\'/gi, '');
           splitAnswer[2] = splitAnswer[2].replace(/\,/gi, '');
           splitAnswer[2] = splitAnswer[2].replace(/\"/gi, '');
-          updateTable(splitAnswer[1], "table1")
-          $("#table2 tr").remove();
-          document.getElementById("secondTable").innerHTML = "";
           sendMessage(splitAnswer[2].trim())
-          document.querySelectorAll(".table-sortable th").forEach(headerCell => {
-              headerCell.addEventListener("click", () => {
-                  const tableElement = headerCell.parentElement.parentElement.parentElement;
-                  const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
-                  const currentIsAscending = headerCell.classList.contains("th-sort-asc");
 
-                  sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
-              });
-          });
-          // console.log(-----------------------)
-          // console.log(splitAnswer[3].trim())
+          // Add table name
+          splitAnswer[4] = splitAnswer[4].replace(/\'/gi, '');
+          splitAnswer[4] = splitAnswer[4].replace(/\,/gi, '');
+          document.getElementById("firstTable").innerHTML = splitAnswer[4];
+
+          // Edit graph data
           splitAnswer[3] = splitAnswer[3].replace(/\,/gi, '');
           splitAnswer[3] = splitAnswer[3].replace(/\(/gi, '');
-          // console.log(splitAnswer[3])
           graphData = splitAnswer[3].split("\'")
-          // console.log(graphData)
-          // anychart.theme(anychart.themes.darkEarth);
-          // if (y ==1){
-          //   chart.remove();
-          //   y=0;
-          // }
+          // Modify graph data to correct format
           data = [];
           interData = [];
           for (i = 2; i < graphData.length-1; i= i + 2) {
             interData = [];
-            // console.log(graphData[i]);
-            // console.log(graphData[i+1]);
             interData.push(graphData[i]);
             interData.push(graphData[i+1]);
             data.push(interData);
           }
           var chart = anychart.column();
-          // add data
+          // add data to chart
           chart.data(data);
-          // set the chart title
+          // set the chart title and draw it
           chart.title("Pending invoices per payer");
-          // draw
           chart.container("container");
           chart.draw();
-          y=1;
-          splitAnswer[4] = splitAnswer[4].replace(/\'/gi, '');
-          splitAnswer[4] = splitAnswer[4].replace(/\,/gi, '');
-          document.getElementById("firstTable").innerHTML = splitAnswer[4];
         }
+        // Type4: Email fill in
         else if (splitAnswer[0].trim() == 'Type4') {
-            console.log(splitAnswer)
-            console.log("IGOTHERE")
             sendMessage("I prepared an email for you.")
-            // function(){
-            //   modal.style.display = "block";
-            // // }
-            // document.getElementById("email").innerHTML = splitAnswer;
-            // modal = document.getElementById("myModal");
             for (i = 0; i<=7; i++){
               splitAnswer[i] = splitAnswer[i].replace(/\'/gi, '');
               splitAnswer[i] = splitAnswer[i].replace(/\,/gi, '');
               splitAnswer[i] = splitAnswer[i].replace(/\"/gi, '');
             }
-
             sendEmail(getMailtoUrl (splitAnswer[2], splitAnswer[3], "Hi <"+ splitAnswer[1] + ">, \r\n Just checking to see if you are receiving our emails. \r\n I wanted to let you know that we have not yet received a payments for invoice number <" + splitAnswer[3] +"> which was due on  <" + splitAnswer[4] + "> with an amount of <"+ splitAnswer[5]+">. \r\n If you have made the payment already please contact our customer support on www.dummylink.com \r\n \r\n Best regards, \r\n<" + splitAnswer[6] +"> \r\n<"+ splitAnswer[7]+" >"));
         }
         else{
@@ -283,49 +245,14 @@ function submit_message(message) {
         }
       }
   }
-
+// Simple submit for initial text
 function submit_first_message(message) {
         $.post( "/send_first_message", {message: message}, handle_first_response);
         function handle_first_response(data) {
           sendMessage(data);
         }
     }
-
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-
-// // When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//   modal.style.display = "block";
-//
-//   sendEmail(getMailtoUrl ("email", "subject", "Hi something, \r\n hello "));
-// }
-// getMailtoUrl ("email", "subject", "textgere");
-//
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-//
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-
-function sendEmail(address) {
-    window.location.href = address;//'mailto:' + address;
-}
-
+// Send an email template
 function getMailtoUrl(to, subject, body) {
     var args = [];
     if (typeof subject !== 'undefined') {
@@ -341,11 +268,21 @@ function getMailtoUrl(to, subject, body) {
     }
     return url;
 }
+function sendEmail(address) {
+    window.location.href = address;//'mailto:' + address;
+}
+// Make the headings clickable so we can sort
+function clickableTableHeading(){
+    document.querySelectorAll(".table-sortable th").forEach(headerCell => {
+        headerCell.addEventListener("click", () => {
+            const tableElement = headerCell.parentElement.parentElement.parentElement;
+            const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
+            const currentIsAscending = headerCell.classList.contains("th-sort-asc");
 
-submit_first_message("first Message ");
-// togglePopup("popup-2")
-// sendMessage('Hello, I am your virtual cash management assistant. How can I help you today?');
-// togglePopup("popup-1")
+            sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
+        });
+    });
+}
 /**
  * Sorts a HTML table.
  *
@@ -390,3 +327,5 @@ function sortTableByColumn(table, column, asc = true) {
     table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-asc", asc);
     table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-desc", !asc);
 }
+// submit this to get the first message
+submit_first_message("first Message ");

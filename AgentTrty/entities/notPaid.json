@@ -1,0 +1,9 @@
+{
+  "id": "d15fbe90-7370-4bbf-bec8-d286b9cc52c5",
+  "name": "notPaid",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

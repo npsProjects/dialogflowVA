@@ -1,0 +1,132 @@
+[
+  {
+    "id": "ab690635-f896-490f-a776-da51cce34652",
+    "data": [
+      {
+        "text": "hé",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "436bfe35-9ec5-4e0b-8a75-d2616d390bfe",
+    "data": [
+      {
+        "text": "hoi",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "39116713-132b-43eb-a4b1-8332dbe823b5",
+    "data": [
+      {
+        "text": "hé hoi",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "8391c63a-5e8d-4ea5-890e-0a2c752978a6",
+    "data": [
+      {
+        "text": "hé hallo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "89772815-b049-44f8-a0fb-c9bd882220ed",
+    "data": [
+      {
+        "text": "gegroet",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "8ca1f40e-0f91-44bb-a7ea-e9bb8ef53949",
+    "data": [
+      {
+        "text": "ik begroet je",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "fd02e691-f2ec-4fc0-8947-8010b9275388",
+    "data": [
+      {
+        "text": "lang niet gezien",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "1fa9d0a1-845d-4b3e-ae53-0434eab81e82",
+    "data": [
+      {
+        "text": "goeiedag",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "064d9d20-4ab5-430a-9759-c77bf7de6d4c",
+    "data": [
+      {
+        "text": "goedendag",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "b8afa0cc-4941-4b8b-b08b-11ed0a298544",
+    "data": [
+      {
+        "text": "hallo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "3c145559-b2dc-4e17-8bd6-4e1b56a2f280",
+    "data": [
+      {
+        "text": "I want to see our ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "77bb5aeb-c6b8-4738-860d-55d8e7fd2093",
+    "data": [
+      {
+        "text": "I ",
+        "userDefined": false
+      },
+      {
+        "text": "want",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " to check our ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c763a313-6638-44a5-9398-caa58cf3b76c",
+    "data": [
+      {
+        "text": "I ",
+        "userDefined": false
+      },
+      {
+        "text": "want",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " to check the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "7d44e80b-bba1-4e8a-af5e-9ffd37925f5e",
+    "data": [
+      {
+        "text": "I would",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " like to see my ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

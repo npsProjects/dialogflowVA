@@ -1,0 +1,20 @@
+[
+  {
+    "value": "factuur",
+    "synonyms": [
+      "factuur"
+    ]
+  },
+  {
+    "value": "credit",
+    "synonyms": [
+      "credit"
+    ]
+  },
+  {
+    "value": "betaler",
+    "synonyms": [
+      "betaler"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "048884fb-7e9f-43a7-9fd4-64ce576f5222",
+    "data": [
+      {
+        "text": "laat me de ",
+        "userDefined": false
+      },
+      {
+        "text": "kredietinformatie zien",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "97d87d04-63b1-435f-ba6f-2501ac6c0040",
+    "data": [
+      {
+        "text": "Toon me de ",
+        "userDefined": false
+      },
+      {
+        "text": "credit",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " van ",
+        "userDefined": false
+      },
+      {
+        "text": "OMV",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  }
+]

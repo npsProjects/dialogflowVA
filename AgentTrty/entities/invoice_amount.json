@@ -1,0 +1,9 @@
+{
+  "id": "d957aa9e-ce60-4ae2-ab32-4bada8ab8f73",
+  "name": "invoice_amount",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

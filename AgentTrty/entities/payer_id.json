@@ -1,0 +1,9 @@
+{
+  "id": "cdb80347-1a13-4db1-8d85-7331de48a29e",
+  "name": "payer_id",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

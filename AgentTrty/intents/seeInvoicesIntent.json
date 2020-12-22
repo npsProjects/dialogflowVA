@@ -1,0 +1,83 @@
+{
+  "id": "d17c34ef-41f3-44d2-ac8d-c93d264cf74f",
+  "name": "seeInvoicesIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "invoicesDialog",
+          "lifespan": 1
+        },
+        {
+          "name": "seeInvoicesIntent-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "28c78e29-b8d8-4628-9db5-9b61f1faedc3",
+          "name": "selectsql",
+          "required": false,
+          "dataType": "@selectSQL",
+          "value": "$selectsql",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a796ae27-dc05-497c-855e-56381684e7fe",
+          "name": "tabletype",
+          "required": false,
+          "dataType": "@tableType",
+          "value": "$tabletype",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "nl",
+          "speech": [
+            "Dutch test 1"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Would you like to see the top 10% invoices pending today?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

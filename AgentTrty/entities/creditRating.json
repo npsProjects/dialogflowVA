@@ -1,0 +1,9 @@
+{
+  "id": "fe70b156-a0aa-4a9b-a0e7-680dc22f8c6f",
+  "name": "creditRating",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

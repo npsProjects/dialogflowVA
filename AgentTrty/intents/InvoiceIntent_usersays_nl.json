@@ -1,0 +1,341 @@
+[
+  {
+    "id": "156eb663-21ea-4d12-a982-664babd9a519",
+    "data": [
+      {
+        "text": "Laat me de ",
+        "userDefined": false
+      },
+      {
+        "text": "achterstallige",
+        "meta": "@overdue",
+        "alias": "overdue",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "facturen",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "voor",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "4 dagen",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "zien",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "e19865a3-e77a-45e2-a0cb-37a48cfb5c30",
+    "data": [
+      {
+        "text": "Mag ik ",
+        "userDefined": false
+      },
+      {
+        "text": "alle",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "betaalde",
+        "meta": "@paid",
+        "alias": "paid",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "facturen",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "zien",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "9bd5519e-4843-43a0-ad41-db31ae7783d7",
+    "data": [
+      {
+        "text": "Laat me de openstaande ",
+        "userDefined": false
+      },
+      {
+        "text": "facturen",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " van ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "zien",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "c5c7ad6c-bb21-43fd-8d40-f151673d06a4",
+    "data": [
+      {
+        "text": "Laat me de ",
+        "userDefined": false
+      },
+      {
+        "text": "facturen",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "van vorige week",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "zien",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "3900f914-a74d-4c93-a3a6-7e015ac26db5",
+    "data": [
+      {
+        "text": "Laat me de openstaande ",
+        "userDefined": false
+      },
+      {
+        "text": "facturen",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "zien",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "a69bf9df-c162-487d-ba41-78a8376c10da",
+    "data": [
+      {
+        "text": "Hoeveel",
+        "meta": "@count",
+        "alias": "count",
+        "userDefined": true
+      },
+      {
+        "text": " openstaande ",
+        "userDefined": false
+      },
+      {
+        "text": "facturen",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "heb ik",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "0893d377-c1c1-4eec-9a34-f1a9e896bf85",
+    "data": [
+      {
+        "text": "Laat me de ",
+        "userDefined": false
+      },
+      {
+        "text": "top",
+        "meta": "@top",
+        "alias": "top",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "10%",
+        "meta": "@sys.percentage",
+        "alias": "percentage",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "facturen",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "zien",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  },
+  {
+    "id": "1aa851c7-8852-402d-85b7-aff867172b6a",
+    "data": [
+      {
+        "text": "Laat me ",
+        "userDefined": false
+      },
+      {
+        "text": "vandaag",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      },
+      {
+        "text": " de openstaande ",
+        "userDefined": false
+      },
+      {
+        "text": "facturen",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "zien",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  }
+]

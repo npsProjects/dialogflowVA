@@ -1,0 +1,117 @@
+{
+  "id": "4967a444-4b5e-4565-a8d2-23e3897d7b92",
+  "name": "payerIntent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "5d56d5d4-f00b-4e32-957f-58d2eeaa02db",
+          "name": "selectsql",
+          "required": false,
+          "dataType": "@selectSQL",
+          "value": "$selectsql",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2755a770-fe1c-4b2a-a763-d411589b1b24",
+          "name": "payer_id",
+          "required": false,
+          "dataType": "@payer_id",
+          "value": "$payer_id",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7e015014-c10a-44a0-b75e-009bc17e316d",
+          "name": "address",
+          "required": false,
+          "dataType": "@address",
+          "value": "$address",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "5963fe50-ff95-426f-8e15-0f22dbccad19",
+          "name": "primaryiban",
+          "required": false,
+          "dataType": "@primaryIBAN",
+          "value": "$primaryiban",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2bf43d49-b4b4-4189-90b1-c3aad7485948",
+          "name": "secondaryiban",
+          "required": false,
+          "dataType": "@secondaryIBAN",
+          "value": "$secondaryiban",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "d6b4dc51-fc4f-4a62-903d-89f22472be0d",
+          "name": "tableType",
+          "required": false,
+          "dataType": "@tableType",
+          "value": "$tableType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

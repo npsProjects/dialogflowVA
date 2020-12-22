@@ -1,0 +1,9 @@
+{
+  "id": "83b019fc-501e-4a6a-9d49-bce27d9e8180",
+  "name": "before",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

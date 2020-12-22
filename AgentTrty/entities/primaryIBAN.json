@@ -1,0 +1,9 @@
+{
+  "id": "8e6ebaad-f46a-49b5-98e6-5e7978958552",
+  "name": "primaryIBAN",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

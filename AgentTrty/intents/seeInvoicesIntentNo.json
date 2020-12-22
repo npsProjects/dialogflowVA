@@ -1,0 +1,40 @@
+{
+  "id": "6b1b32ad-c266-43fa-add4-928114099652",
+  "parentId": "d17c34ef-41f3-44d2-ac8d-c93d264cf74f",
+  "rootParentId": "d17c34ef-41f3-44d2-ac8d-c93d264cf74f",
+  "name": "seeInvoicesIntentNo",
+  "auto": true,
+  "contexts": [
+    "invoicesDialog",
+    "seeInvoicesIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "seeInvoicesIntent.seeInvoicesIntent-custom-2",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Okay, what would you like to do?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

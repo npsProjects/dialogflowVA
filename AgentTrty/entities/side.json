@@ -1,0 +1,9 @@
+{
+  "id": "ac5af5b6-94df-42c2-b8f1-a613d9599ef6",
+  "name": "side",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

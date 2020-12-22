@@ -1,0 +1,9 @@
+{
+  "id": "733da05e-cf09-4042-b868-4c5d9f85cbaa",
+  "name": "selectSQL",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

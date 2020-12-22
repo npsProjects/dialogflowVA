@@ -39,10 +39,22 @@ sendMessage = function (text) {
     message.draw();
     return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
 };
-$('.send_message').click(function (e) {
-    sendMessage(getMessageText());
-    submit_message(getMessageText());
-});
+// Button Functionallity, could not make it work for some reason.
+// $('.send_message').click(function (e) {
+//     sendMessage(getMessageText());
+//     submit_message(getMessageText());
+// });
+
+// $('.message_input').keyup(function (e) {
+//     if (e.which === 13) {
+//         submit_message(getMessageText());
+//         return sendMessage(getMessageText());
+//     }
+// });
+// Keep track on which tables are on the screen
+
+
+// Same as button, but works with enter
 $('#target').on('submit', function(e){
         e.preventDefault();
         const input_message = $('#input_message').val()
@@ -51,16 +63,9 @@ $('#target').on('submit', function(e){
           return
         }
 
-        sendMessage(input_message);
         submit_message(input_message);
+});
 
-});
-$('.message_input').keyup(function (e) {
-    if (e.which === 13) {
-        return sendMessage(getMessageText());
-    }
-});
-// Keep track on which tables are on the screen
 var x;
 // Functionallity of popups
 function togglePopup(popupNumber){
@@ -103,7 +108,8 @@ function updateTable(answer, table){
 // Sending a message
 function submit_message(message) {
       $.post( "/send_message", {message: message}, handle_response);
-
+      // Show it on screen
+      sendMessage(message);
       function handle_response(data) {
         // Parse the resonse. We check if we are dealing with type message.
         answer = data.message;

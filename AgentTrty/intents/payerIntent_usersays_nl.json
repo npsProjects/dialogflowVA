@@ -1,0 +1,41 @@
+[
+  {
+    "id": "e915a8c1-0512-48fd-945d-8d2940a5d498",
+    "data": [
+      {
+        "text": "Laat me de ",
+        "userDefined": false
+      },
+      {
+        "text": "betalerinformatie",
+        "meta": "@tableType",
+        "alias": "tableType",
+        "userDefined": true
+      },
+      {
+        "text": " van ",
+        "userDefined": false
+      },
+      {
+        "text": "OMV",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "zien",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "nl",
+    "updated": 0
+  }
+]

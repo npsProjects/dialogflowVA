@@ -1,0 +1,397 @@
+[
+  {
+    "id": "85ae9235-2580-47ad-b1e3-69da441deb0f",
+    "data": [
+      {
+        "text": "Show me the ",
+        "userDefined": false
+      },
+      {
+        "text": "payer",
+        "meta": "@tableType",
+        "alias": "tableType",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "information",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b047b1b3-823c-43b8-9879-d5dfe8f6eb19",
+    "data": [
+      {
+        "text": "Show me the ",
+        "userDefined": false
+      },
+      {
+        "text": "payer",
+        "meta": "@tableType",
+        "alias": "tableType",
+        "userDefined": false
+      },
+      {
+        "text": " information",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "1f2fb139-4213-4330-a562-8e29899056eb",
+    "data": [
+      {
+        "text": "How",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " can I contact ",
+        "userDefined": false
+      },
+      {
+        "text": "Aramco",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "cdd9fbe7-beee-4ff8-8b42-639922ce410f",
+    "data": [
+      {
+        "text": "I want to see the ",
+        "userDefined": false
+      },
+      {
+        "text": "payer",
+        "meta": "@tableType",
+        "alias": "tableType",
+        "userDefined": false
+      },
+      {
+        "text": " information",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2b8e6792-ff3b-4ba0-ab63-a68cf5893a6b",
+    "data": [
+      {
+        "text": "I want to see the ",
+        "userDefined": false
+      },
+      {
+        "text": "payer",
+        "meta": "@tableType",
+        "alias": "tableType",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "information",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "Chevron",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "7309dc01-1beb-44c7-a524-85bacc6c41cf",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "payer",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "information",
+        "meta": "@primaryIBAN",
+        "alias": "primaryiban",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "5674b29c-c336-4ad1-ab19-026622e3a868",
+    "data": [
+      {
+        "text": "Give me",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "details",
+        "meta": "@primaryIBAN",
+        "alias": "primaryiban",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "payer",
+        "meta": "@tableType",
+        "alias": "tableType",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "40c4d0f4-443d-4321-9868-207063f09e9b",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "secondary IBAN",
+        "meta": "@secondaryIBAN",
+        "alias": "secondaryiban",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "OMV",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "daa1d6f1-d9bd-4afd-ae37-40d3f2df314b",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "IBAN",
+        "meta": "@primaryIBAN",
+        "alias": "primaryiban",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "SHELL",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a04f9fe1-f49f-49ab-9bd0-9f36a14d7a3c",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "address",
+        "meta": "@address",
+        "alias": "address",
+        "userDefined": false
+      },
+      {
+        "text": " of AMV",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "5512ceb3-62d8-4cd9-9254-d7b09669bce3",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " me the payer ",
+        "userDefined": false
+      },
+      {
+        "text": "address",
+        "meta": "@address",
+        "alias": "address",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2f0d0836-bdf5-45b7-8eaf-ea37c0cd30a0",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " me the payer name of ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "id": "b8ce07c0-9be0-4e5b-abd3-9780a36a163b",
+  "name": "credit_intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "ab1a2400-9690-4159-bfbc-2d9c7fd74463",
+          "name": "amountavailable",
+          "required": false,
+          "dataType": "@AmountAvailable",
+          "value": "$amountavailable",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2029e4b4-5464-4a02-a2c2-da260299d8b4",
+          "name": "tabletype",
+          "required": false,
+          "dataType": "@tableType",
+          "value": "$tabletype",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "68eaf2d9-3ec1-4d0f-aa60-a4481a5b9b3b",
+          "name": "amountavailable1",
+          "required": false,
+          "dataType": "@AmountAvailable",
+          "value": "$amountavailable1",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "cc7439f3-80df-4cef-aac4-29e94b4c9503",
+          "name": "creditrating",
+          "required": false,
+          "dataType": "@creditRating",
+          "value": "$creditrating",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "3a39da6c-4956-4d87-a0bd-e20690d0b96a",
+          "name": "amountused",
+          "required": false,
+          "dataType": "@amountUsed",
+          "value": "$amountused",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "dfeb34f0-0e54-4b95-9ea9-3790e8624926",
+          "name": "payer_id",
+          "required": false,
+          "dataType": "@payer_id",
+          "value": "$payer_id",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

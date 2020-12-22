@@ -1,0 +1,64 @@
+{
+  "id": "2a48176d-3bb0-4b60-aa0e-268f0595bc95",
+  "parentId": "d17c34ef-41f3-44d2-ac8d-c93d264cf74f",
+  "rootParentId": "d17c34ef-41f3-44d2-ac8d-c93d264cf74f",
+  "name": "seeInvoicesIntentYes",
+  "auto": true,
+  "contexts": [
+    "invoicesDialog",
+    "seeInvoicesIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "seeInvoicesIntent.seeInvoicesIntent-custom",
+      "affectedContexts": [
+        {
+          "name": "seeInvoicesIntentYes-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "72ac1826-0a39-4dd5-9a29-33a60801d538",
+          "name": "selectsql",
+          "required": false,
+          "dataType": "@selectSQL",
+          "value": "$selectsql",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "nl",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

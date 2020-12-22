@@ -1,0 +1,9 @@
+{
+  "id": "b708ba4c-854f-4684-8afc-f9a1b7371eae",
+  "name": "overdue",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

@@ -1,0 +1,9 @@
+{
+  "id": "3ae70e22-0393-4402-9477-c2cb1fa01521",
+  "name": "address",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": true
+}

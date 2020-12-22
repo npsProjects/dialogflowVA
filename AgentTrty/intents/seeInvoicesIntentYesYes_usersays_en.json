@@ -1,0 +1,145 @@
+[
+  {
+    "id": "ed4cd028-7177-4fb4-9ce4-ee366b199a68",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "4a2222a2-8110-4864-8ba1-3b771db1c361",
+    "data": [
+      {
+        "text": "Please ",
+        "userDefined": false
+      },
+      {
+        "text": "show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "eb1f4f84-058a-474b-a7db-414fd8a60775",
+    "data": [
+      {
+        "text": "Please do",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "ac65dc43-6042-428c-b1fa-2e7ada5a8d67",
+    "data": [
+      {
+        "text": "Please, ",
+        "userDefined": false
+      },
+      {
+        "text": "show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " it to me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "14545464-91f2-4056-a6f4-82b63ad7c157",
+    "data": [
+      {
+        "text": "show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "me",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "0bebf515-2dc4-4e95-b1ab-28eac5e3a082",
+    "data": [
+      {
+        "text": "Please, ",
+        "userDefined": false
+      },
+      {
+        "text": "show",
+        "meta": "@selectSQL",
+        "alias": "selectsql",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "me",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "af923733-32ba-4962-8fd8-b647dc5df471",
+    "data": [
+      {
+        "text": "Yes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

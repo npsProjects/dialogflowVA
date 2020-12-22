@@ -1,0 +1,2853 @@
+[
+  {
+    "id": "93b481bf-61ce-4d47-bdb3-362093a551f0",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the pending ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "date",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "before",
+        "meta": "@before",
+        "alias": "before",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "the 1st of December",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      },
+      {
+        "text": " and amount ",
+        "userDefined": false
+      },
+      {
+        "text": "more",
+        "meta": "@more",
+        "alias": "more",
+        "userDefined": false
+      },
+      {
+        "text": " than ",
+        "userDefined": false
+      },
+      {
+        "text": "1000",
+        "meta": "@sys.number-integer",
+        "alias": "number-integer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "08b886cc-02bc-4334-9573-b82c5e5032d0",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "see",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "value",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "over",
+        "meta": "@more",
+        "alias": "more",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "1000",
+        "meta": "@sys.number-integer",
+        "alias": "number-integer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "1988bac4-7555-4b33-9739-81dee2ee54a4",
+    "data": [
+      {
+        "text": "List",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": true
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " due ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2dc4975e-1314-4c20-9feb-bc97d86e4c7a",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "see",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " all the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "9fc57fe1-cc4f-429c-877a-36454546d63b",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "see",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "highest",
+        "meta": "@top",
+        "alias": "top",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invocie",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a546ea1b-88ff-4f89-b7cb-5840b2d15b72",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "see",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "closed",
+        "meta": "@paid",
+        "alias": "paid",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "776c1a1b-ea84-48a0-b847-3f75c33a16e1",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "see",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "settled",
+        "meta": "@paid",
+        "alias": "paid",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c3d90a23-02b8-4d34-8909-e9a6eed420c6",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "see",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "not",
+        "meta": "@notPaid",
+        "alias": "notPaid",
+        "userDefined": false
+      },
+      {
+        "text": " settled ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "1830590e-037a-43af-a8ec-f0205a6ab0e5",
+    "data": [
+      {
+        "text": "I want",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "see",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": true
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "open",
+        "meta": "@notPaid",
+        "alias": "notPaid",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a95a6357-3646-4e11-a2e4-605914fbaa34",
+    "data": [
+      {
+        "text": "I would",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " like to see the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " pending ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "30bac77c-d76f-4512-a94d-1747489ab1c3",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "amount",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "less",
+        "meta": "@less",
+        "alias": "less",
+        "userDefined": false
+      },
+      {
+        "text": " than ",
+        "userDefined": false
+      },
+      {
+        "text": "5000",
+        "meta": "@sys.number-integer",
+        "alias": "number-integer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "4cad61f7-87df-4f51-b015-c2bd15ea4499",
+    "data": [
+      {
+        "text": "Can you ",
+        "userDefined": false
+      },
+      {
+        "text": "show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "open",
+        "meta": "@notPaid",
+        "alias": "notPaid",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "9b09fc69-bd3f-4ba1-8851-3f47b8a871c1",
+    "data": [
+      {
+        "text": "What",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " are the pending ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "224d5c0f-ffac-4b73-8a98-544d34c79cd9",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "see",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " with amount ",
+        "userDefined": false
+      },
+      {
+        "text": "more",
+        "meta": "@more",
+        "alias": "more",
+        "userDefined": false
+      },
+      {
+        "text": " than ",
+        "userDefined": false
+      },
+      {
+        "text": "1200",
+        "meta": "@sys.number-integer",
+        "alias": "number-integer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "714e30f1-668c-4692-983d-fccc248f7bb1",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "payed",
+        "meta": "@paid",
+        "alias": "paid",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "last week",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "22659b13-928d-4d8b-9085-1d4d0a48076d",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "lowest",
+        "meta": "@lowest",
+        "alias": "lowest",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "10%",
+        "meta": "@sys.percentage",
+        "alias": "percentage",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b0fe1793-73d5-499e-b3c1-85bb63e3e323",
+    "data": [
+      {
+        "text": "How many",
+        "meta": "@count",
+        "alias": "count",
+        "userDefined": false
+      },
+      {
+        "text": " pending ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " we ",
+        "userDefined": false
+      },
+      {
+        "text": "have",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "before",
+        "meta": "@before",
+        "alias": "before",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "tomorrow",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2288896e-bdb0-4e4f-b3bc-764f9d5a7bff",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "top",
+        "meta": "@top",
+        "alias": "top",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "10%",
+        "meta": "@sys.percentage",
+        "alias": "percentage",
+        "userDefined": false
+      },
+      {
+        "text": " pending ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "65d51568-6340-4c2d-8e8c-cfb418855437",
+    "data": [
+      {
+        "text": "Can you ",
+        "userDefined": false
+      },
+      {
+        "text": "show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "largest",
+        "meta": "@top",
+        "alias": "top",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6f5a9518-9359-4b0f-b108-2d53099d5065",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "overdue",
+        "meta": "@overdue",
+        "alias": "overdue",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "10 days",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "ffaa3466-9aaa-42ac-a94b-2d46313f7eee",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "before",
+        "meta": "@before",
+        "alias": "before",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6e5c464b-0e9a-4dff-800d-54b3a302c0c0",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "after",
+        "meta": "@after",
+        "alias": "after",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6fa5dc46-28e5-44e9-9d13-8306c2da827f",
+    "data": [
+      {
+        "text": "How many",
+        "meta": "@count",
+        "alias": "count",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " do ",
+        "userDefined": false
+      },
+      {
+        "text": "I",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "have",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "1800cd15-64e5-401b-83ee-9e5e50e4528a",
+    "data": [
+      {
+        "text": "What",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " is the ",
+        "userDefined": false
+      },
+      {
+        "text": "largest",
+        "meta": "@top",
+        "alias": "top",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoice",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "788c3fd3-6f80-4f12-928d-d3623a21d668",
+    "data": [
+      {
+        "text": "I",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " need to ",
+        "userDefined": false
+      },
+      {
+        "text": "see",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "top",
+        "meta": "@top",
+        "alias": "top",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "20%",
+        "meta": "@sys.percentage",
+        "alias": "percentage",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " pending ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "fe4df737-a6a2-41cd-ab8a-fd38f650f61b",
+    "data": [
+      {
+        "text": "How many",
+        "meta": "@count",
+        "alias": "count",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " do ",
+        "userDefined": false
+      },
+      {
+        "text": "I",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " have?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "0aba68da-034b-44b9-8fdd-833a15b35845",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me all the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d1849f39-4f74-4e1c-827f-9c51de377939",
+    "data": [
+      {
+        "text": "I would",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "need to",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " know ",
+        "userDefined": false
+      },
+      {
+        "text": "all",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "my",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " pending ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "3556adaf-c096-4b9b-a858-1057ebd4e58e",
+    "data": [
+      {
+        "text": "I would",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " need to get all ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "fb37a405-c7d3-45cf-93fa-88d2c42c11a5",
+    "data": [
+      {
+        "text": "I would",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "need to",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " get all ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "yesterday",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f5664514-1db7-4f52-ae5d-b6fb72b45e35",
+    "data": [
+      {
+        "text": "show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " that are ",
+        "userDefined": false
+      },
+      {
+        "text": "not paid",
+        "meta": "@notPaid",
+        "alias": "notPaid",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f65f6805-d19e-4225-8d74-b85bf54f88f6",
+    "data": [
+      {
+        "text": "Can I get",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "invoice",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "date",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " as ",
+        "userDefined": false
+      },
+      {
+        "text": "1st November",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "bf792dd2-33c3-4142-ac45-8ae3c0272456",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me all ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "which",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "have",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "been",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "overdue",
+        "meta": "@overdue",
+        "alias": "overdue",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "10 days",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "9d41f85e-62d4-4605-937e-4db554e5c2e3",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "top",
+        "meta": "@top",
+        "alias": "top",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "20%",
+        "meta": "@sys.percentage",
+        "alias": "percentage",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b0679026-b890-4269-9b25-b78d48ade301",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me ",
+        "userDefined": false
+      },
+      {
+        "text": "all",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "overdue",
+        "meta": "@overdue",
+        "alias": "overdue",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e7f5b7c3-0f35-4417-89c5-dcb1a52bac72",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " with the ",
+        "userDefined": false
+      },
+      {
+        "text": "lowest",
+        "meta": "@lowest",
+        "alias": "lowest",
+        "userDefined": false
+      },
+      {
+        "text": " amount",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "45672a56-21cf-45f4-9f12-a5bc9ae0054a",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " with the ",
+        "userDefined": false
+      },
+      {
+        "text": "highest",
+        "meta": "@top",
+        "alias": "top",
+        "userDefined": false
+      },
+      {
+        "text": " amount",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c99ee034-3084-48c0-97ba-ad9714377b96",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me all ",
+        "userDefined": false
+      },
+      {
+        "text": "overdue",
+        "meta": "@overdue",
+        "alias": "overdue",
+        "userDefined": true
+      },
+      {
+        "text": " invoices from ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "8f5c0131-fa4f-4f4e-a330-8b9319a014e3",
+    "data": [
+      {
+        "text": "Which",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "invoice",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "lowest",
+        "meta": "@lowest",
+        "alias": "lowest",
+        "userDefined": false
+      },
+      {
+        "text": " amount",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "10ee97d0-13fc-4e18-bcae-bcde7e223334",
+    "data": [
+      {
+        "text": "Which",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " is ",
+        "userDefined": false
+      },
+      {
+        "text": "invoice",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "highest",
+        "meta": "@top",
+        "alias": "top",
+        "userDefined": false
+      },
+      {
+        "text": " amount",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a7d9cf91-87a1-4936-9efd-25b5328aa4cf",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me ",
+        "userDefined": false
+      },
+      {
+        "text": "top",
+        "meta": "@top",
+        "alias": "top",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " that are ",
+        "userDefined": false
+      },
+      {
+        "text": "not paid",
+        "meta": "@notPaid",
+        "alias": "notPaid",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "61d9c159-3ae7-4c4c-9bc6-9cb0a2f23800",
+    "data": [
+      {
+        "text": "Can I get",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "invoice",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " date as ",
+        "userDefined": false
+      },
+      {
+        "text": "1st of November",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "34660d7c-6c24-49ff-a7fb-b547e6854c96",
+    "data": [
+      {
+        "text": "Which",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " are pending ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e6e7a308-97b6-4717-a62a-ea765c06bf75",
+    "data": [
+      {
+        "text": "What",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": true
+      },
+      {
+        "text": " are the pending ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " on ",
+        "userDefined": false
+      },
+      {
+        "text": "02/11/2020",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "7f34cb1f-b142-4947-ab9b-a2813f13f19e",
+    "data": [
+      {
+        "text": "How",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " that ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "needs to pay",
+        "meta": "@notPaid",
+        "alias": "notPaid",
+        "userDefined": false
+      },
+      {
+        "text": " on ",
+        "userDefined": false
+      },
+      {
+        "text": "01/11/2020",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      },
+      {
+        "text": ".",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e920f1f6-14aa-40ec-af4f-e271fd5d3a71",
+    "data": [
+      {
+        "text": "show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " that ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "needs to pay",
+        "meta": "@notPaid",
+        "alias": "notPaid",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "eb121c20-ed4f-47a1-baac-5dcf0038f334",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me all the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "8cbb988f-4524-49d7-9df4-e6bab8c2490b",
+    "data": [
+      {
+        "text": "How many",
+        "meta": "@count",
+        "alias": "count",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " does ",
+        "userDefined": false
+      },
+      {
+        "text": "OMV",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "have",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " that are ",
+        "userDefined": false
+      },
+      {
+        "text": "not paid",
+        "meta": "@notPaid",
+        "alias": "notPaid",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "and",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "are",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "more",
+        "meta": "@more",
+        "alias": "more",
+        "userDefined": false
+      },
+      {
+        "text": " than ",
+        "userDefined": false
+      },
+      {
+        "text": "5000",
+        "meta": "@sys.number-integer",
+        "alias": "number-integer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "93d55198-4550-4fb8-b136-d9d2bcf64fd6",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " that the ",
+        "userDefined": false
+      },
+      {
+        "text": "amount",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " is larger than ",
+        "userDefined": false
+      },
+      {
+        "text": "4200",
+        "meta": "@sys.number-integer",
+        "alias": "number-integer",
+        "userDefined": false
+      },
+      {
+        "text": " for ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "83ef239d-bd2b-4244-bc54-9e5aed54c38d",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "OMV",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "more",
+        "meta": "@more",
+        "alias": "more",
+        "userDefined": false
+      },
+      {
+        "text": " than ",
+        "userDefined": false
+      },
+      {
+        "text": "200",
+        "meta": "@sys.number-integer",
+        "alias": "number-integer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b1e38fb8-c1b2-4974-b117-b7152bf1b18a",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "less",
+        "meta": "@less",
+        "alias": "less",
+        "userDefined": false
+      },
+      {
+        "text": " than ",
+        "userDefined": false
+      },
+      {
+        "text": "5000",
+        "meta": "@sys.number-integer",
+        "alias": "number-integer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "fc54d973-c259-46ab-b645-288d5b6d6d4a",
+    "data": [
+      {
+        "text": "show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " that ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "needs to pay",
+        "meta": "@notPaid",
+        "alias": "notPaid",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "49af0ed8-c5a1-4896-8eda-fee2fa5fe670",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me ",
+        "userDefined": false
+      },
+      {
+        "text": "the",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "paid",
+        "meta": "@paid",
+        "alias": "paid",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " of ",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "5f5adb09-c438-430e-ba2d-f190051f62be",
+    "data": [
+      {
+        "text": "Show",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": false
+      },
+      {
+        "text": " me the ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " that are ",
+        "userDefined": false
+      },
+      {
+        "text": "outstanding",
+        "meta": "@notPaid",
+        "alias": "notPaid",
+        "userDefined": true
+      },
+      {
+        "text": " with ",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "54aca20d-7cca-4949-80cf-4549933e6e2d",
+    "data": [
+      {
+        "text": "Give",
+        "meta": "@selectSQL",
+        "alias": "selectSQL",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "me all",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "that",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "are",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "outstanding",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "today",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "with",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " “",
+        "userDefined": false
+      },
+      {
+        "text": "Shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": "”",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "50bd4cd8-eb48-49df-ad04-45806b41938b",
+    "data": [
+      {
+        "text": "Tell me ",
+        "userDefined": false
+      },
+      {
+        "text": "how many",
+        "meta": "@count",
+        "alias": "count",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "invoices",
+        "meta": "@tableType",
+        "alias": "tabletype",
+        "userDefined": false
+      },
+      {
+        "text": " “",
+        "userDefined": false
+      },
+      {
+        "text": "shell",
+        "meta": "@payer_id",
+        "alias": "payer_id",
+        "userDefined": false
+      },
+      {
+        "text": "” ",
+        "userDefined": false
+      },
+      {
+        "text": "has to pay",
+        "meta": "@paid",
+        "alias": "paid",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

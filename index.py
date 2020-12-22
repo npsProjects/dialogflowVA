@@ -43,8 +43,6 @@ def index(username):
     print("* Customer is:" + str(client_id))
     print("----------------------------------------------------------------------------------------")
 
-
-
     name = str(query("SELECT name  FROM user where user_id = \"" + str(user)+"\"")[0])
     name = name[2:]
     name = name[:(len(name)-3)]
@@ -138,7 +136,7 @@ def webhook():
     # Deal with the payer intent here
     if(query_result.get('intent').get('displayName')=='payerIntent'):
 
-        print("-----------------------WEBHOOK--------------------")
+        print("-----------------------Payer Intent--------------------")
 
         # Specify the payer and payer Flag (if there is a payer)
         # Then query based on the result from dialogflow.
@@ -195,7 +193,6 @@ def webhook():
     # Deal with the invoice intent here
     if(query_result.get('intent').get('displayName')=='InvoiceIntent'):
         print("-----------------------Invoice Intent--------------------")
-
 
         print(" * Determine whether Select or Count: \n")
 
@@ -682,7 +679,8 @@ def submit_first_message():
 
 # Perform the query
 def query(query):
-    print(" ~~~~~~~~~~ I am querying:  " + query)
+    print(" ~~~~~~~~~~")
+    print(" I am querying:  " + query)
     database = (r"tt.db")
     conn = None
     try:
@@ -711,4 +709,8 @@ def queryParse(inputQuery):
 
 # run Flask app
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True,host='0.0.0.0')
+
+@app.route('/')
+def hello_world():
+    return render_template('index1.html')

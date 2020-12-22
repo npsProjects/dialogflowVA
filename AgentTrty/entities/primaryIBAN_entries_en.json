@@ -1,0 +1,15 @@
+[
+  {
+    "value": "primary IBAN",
+    "synonyms": [
+      "primary IBAN",
+      "first IBAN"
+    ]
+  },
+  {
+    "value": "IBAN",
+    "synonyms": [
+      "IBAN"
+    ]
+  }
+]

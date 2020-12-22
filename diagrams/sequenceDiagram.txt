@@ -1,0 +1,17 @@
+@startuml
+actor User
+boundary Frontend
+User -> Frontend: login
+Frontend -> Backend: login()
+Backend -> Frontend: index() (queries username, customer_id)
+Frontend -> User: Virtual assistant
+User -> Frontend: message
+Frontend -> Backend: send_message()
+Backend -> Dialogflow: detect_intent_texts()
+Dialogflow -> Webhook: fullfillment request (intent,entities,text)
+Webhook -> DatabaseTables: Queries
+DatabaseTables -> Webhook: Query result
+Webhook -> Dialogflow: webhook() response
+Dialogflow -> Frontend: handle_response()
+Frontend -> User: response
+@enduml

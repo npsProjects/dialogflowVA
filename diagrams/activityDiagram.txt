@@ -1,0 +1,19 @@
+@startuml
+(*) --> "User logs in login()"
+--> "index() (queries username, customer_id)"
+--> "User sends messages"
+--> "Forward message to backend with sendMessage()"
+--> "Detect intent with dialogflow through detect_intent_texts()"
+
+if "Detected intent has fullfillment" then
+  -->[true] "Send intent,entities to webhook"
+  --> "Webhook queries database and creates response (Type message)"
+  --> "Send response to Dialogflow"
+  --> "Dialogflow sends response to local app"
+  -right-> "Send response to frontend handle_response()"
+else
+  ->[false] "Send response to frontend handle_response()"
+  -->[Ending process] (*)
+endif
+
+@enduml
